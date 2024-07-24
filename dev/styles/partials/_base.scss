@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: Golos, sans-serif;
+  font-family: Montserrat, sans-serif;
 
   display: flex;
   flex-direction: column;
@@ -58,27 +58,19 @@ main {
 // Helpers
 //===========================
 
-.container,
-[class*="__container"] {
+.container{
   margin: 0 auto;
-  width: 100%;
-  max-width: rem($maxWidthContainer);
+  width: 361px;
   padding: 0 rem(calc($containerPadding/2));
+  @include minw($lg-tablet) {
+    width: 786px;
+  }
+  @include minw($lg) {
+    width: 1280px;
+  }
 }
 
-.container-fuild {
-  margin: 0 auto;
-  width: 100%;
-  max-width: rem($maxWidthContainer);
-  padding: 0 rem(calc($containerPadding/2));
-}
 
-.container-small {
-  margin: 0 auto;
-  width: 100%;
-  max-width: rem($smallWidthContainer);
-  padding: 0 rem(calc($containerPadding/2));
-}
 
 
 .tac {

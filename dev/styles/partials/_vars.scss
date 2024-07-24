@@ -7,7 +7,9 @@ $bttnSecondColor: rgb(210, 59, 59);
 $mainColor: #000;
 
 $red: #b5143b;
-$black: #191919;
+$black: #191C22;
+$colorLightText: #F9F3F3;
+$accentColor: #FDD76E;
 
 
 //===========================
@@ -27,9 +29,10 @@ $gridMinSize: 450; // Минимальная ширина для 2 колоно�
 // Брейкпоинты
 $uhd: 2160px;
 $fhd: 1900px;
-$lg: 1400px;
+$lg: 1440px;
 $pc: $containerWidth+px;
 $sm-pc: 992px;
+$lg-tablet: 820px;
 $tablet: 768px;
 $mob: 576px;
 $i5: 320px;
@@ -40,6 +43,9 @@ $i5: 320px;
 // 992 - 768 Планшет
 // 750 - 600 Горизонтальный моб
 // 600 - 320 Моб
+
+$mainFont: Montserrat, sans-serif;
+$secondaryFont: FixelDisplay, sans-serif;
 
 // Fonts
 $minFontSize: 1.4rem; // 14px

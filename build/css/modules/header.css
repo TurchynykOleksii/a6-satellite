@@ -6,7 +6,7 @@
   -webkit-backdrop-filter: blur(4rem);
   backdrop-filter: blur(4rem);
   z-index: 99;
-  background-color: #191919;
+  background-color: #191C22;
   transition: 0.3s linear;
 }
 @media only screen and (min-width: 992px) {
