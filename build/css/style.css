@@ -567,8 +567,8 @@ form label {
 .header__menu {
   position: fixed;
   top: 0;
-  left: 100%;
-  width: 100vw;
+  left: -100%;
+  width: 100%;
   height: 100vh;
   background-color: #fff;
   z-index: 100;
@@ -598,8 +598,8 @@ form label {
   text-align: center;
   text-decoration: none;
   color: #000;
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 500;
   padding: 2.4rem 0;
 }
 @media only screen and (min-width: 992px) {
@@ -616,6 +616,16 @@ form label {
     border-top: 0;
     margin-left: 2rem;
   }
+}
+.header__menu-list .submenu {
+  display: none;
+  list-style-type: none;
+}
+.header__menu-list .submenu a {
+  padding: 0;
+}
+.header__menu-list .submenu--open {
+  display: block;
 }
 
 @media only screen and (max-width: 992px) {
