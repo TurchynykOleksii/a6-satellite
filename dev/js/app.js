@@ -93,10 +93,13 @@ $(document).ready(function () {
 
     if (submenu.hasClass("submenu--open")) {
       submenu.removeClass("submenu--open");
+      $(this).removeClass("open"); // Удаляем класс .open при повторном клике
     } else {
       $(".submenu").removeClass("submenu--open");
+      $(".menu-item__submenu").removeClass("open"); // Удаляем класс .open со всех элементов
 
       submenu.addClass("submenu--open");
+      $(this).addClass("open"); // Добавляем класс .open к текущему элементу
     }
   });
 

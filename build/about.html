@@ -21,16 +21,37 @@
     <!-- Add autoHide class to automatically hide the header on scroll -->
     <header class="header autoHide">
       <div class="container">
-        <div class="header__burger"></div>
+        <div class="header__burger">
+          <span></span>
+          <span class="header__burger-center"></span>
+          <span></span>
+        </div>
 
         <a href="/" class="header__logo"
-          ><img src="img/general/logo.svg" alt="logo"
+          ><img src="img/icons/LOGO.svg" alt="logo"
         /></a>
 
         <div class="header__menu">
           <ul class="header__menu-list">
             <li class="menu-item">
-              <a class="menu-item__submenu" href="#"> Про нас</a>
+              <a class="menu-item__submenu">
+                Про нас
+                <svg
+                  width="24"
+                  height="24"
+                  id="arrow-down"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.4448 8.48145L12.4817 15.4446L5.51848 8.48144"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
               <ul class="submenu">
                 <li><a href="#">Про студію</a></li>
                 <li><a href="#">Галерея</a></li>
@@ -38,7 +59,24 @@
               </ul>
             </li>
             <li class="menu-item">
-              <a class="menu-item__submenu" href="#">Вікові категорії</a>
+              <a class="menu-item__submenu">
+                Вікові категорії
+                <svg
+                  width="24"
+                  height="24"
+                  id="arrow-down"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.4448 8.48145L12.4817 15.4446L5.51848 8.48144"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
               <ul class="submenu">
                 <li><a href="#">2-4 роки</a></li>
                 <li><a href="#">4-6 років</a></li>
@@ -47,14 +85,31 @@
                 <li><a href="#">14-16 років</a></li>
               </ul>
             </li>
-            <li class="menu-item" href="#">
-              <a class="menu-item__submenu">Стилі</a>
+            <li class="menu-item">
+              <a class="menu-item__submenu">
+                Стилі
+                <svg
+                  width="24"
+                  height="24"
+                  id="arrow-down"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.4448 8.48145L12.4817 15.4446L5.51848 8.48144"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
               <ul class="submenu">
-                <li><a href="">Хореографія</a></li>
-                <li><a href="">Хіп - Хоп</a></li>
-                <li><a href="">Контемпорарі</a></li>
-                <li><a href="">Джаз Фанк</a></li>
-                <li><a href="">Модерн Джаз</a></li>
+                <li><a href="#">Хореографія</a></li>
+                <li><a href="#">Хіп - Хоп</a></li>
+                <li><a href="#">Контемпорарі</a></li>
+                <li><a href="#">Джаз Фанк</a></li>
+                <li><a href="#">Модерн Джаз</a></li>
               </ul>
             </li>
             <li class="menu-item"><a href="page.html">Розклад</a></li>
@@ -62,6 +117,15 @@
             <li class="menu-item"><a href="#">Контакти</a></li>
           </ul>
         </div>
+        <a href="tel:+38 050 123 45 67" class="header__phone">
+          <div class="header__phone-s">
+            <img src="img/icons/icon-phone.svg" alt="logo" />
+          </div>
+          <div class="header__phone-m">
+            <img src="img/icons/icon-phone-white.svg" alt="logo" />+38 050 123
+            45 67
+          </div>
+        </a>
       </div>
     </header>
 

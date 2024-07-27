@@ -119,14 +119,7 @@
   font-weight: 400;
   font-style: normal;
 }
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("../fonts/Montserrat-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+
 @font-face {
   font-family: Montserrat;
   font-display: swap;
@@ -156,6 +149,14 @@
   font-display: swap;
   src: url("../fonts/Montserrat-ThinItalic.woff2") format("woff2"),
     url("../fonts/Montserrat-ThinItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }

@@ -53,25 +53,23 @@ main {
   }
 }
 
-
 //===========================
 // Helpers
 //===========================
 
-.container{
+.container {
   margin: 0 auto;
   width: 361px;
   padding: 0 rem(calc($containerPadding/2));
   @include minw($lg-tablet) {
     width: 786px;
+    padding: 0 24px;
   }
   @include minw($lg) {
     width: 1280px;
+    padding: 0 80px;
   }
 }
-
-
-
 
 .tac {
   text-align: center;
@@ -83,21 +81,19 @@ main {
   visibility: hidden !important;
 }
 
-
 //===========================
 // Grids
 //===========================
 
-[class*="grid"]+[class*="grid"] {
+[class*="grid"] + [class*="grid"] {
   margin-top: rem($gridPadding);
 }
 
 .grid-2,
 .grid-3,
 .grid-4 {
-
-  &>div,
-  &>a {
+  & > div,
+  & > a {
     &:not(:first-child) {
       margin-top: rem($gridPadding);
     }
@@ -105,11 +101,10 @@ main {
     @include minw($gridMinSize + px) {
       width: calc(50% - rem(calc($gridPadding/2)));
 
-      &:nth-child(-n+2) {
+      &:nth-child(-n + 2) {
         margin-top: 0;
       }
     }
-
   }
 
   @include minw($gridMinSize + px) {
@@ -117,24 +112,22 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
 }
 
 @include minw($sm-pc) {
-
   .grid-3,
   .grid-4 {
     justify-content: flex-start;
 
-    &>div,
-    &>a {
+    & > div,
+    & > a {
       width: calc(33.33% - rem(calc($gridPadding/1.5)));
 
-      &:nth-child(-n+3) {
+      &:nth-child(-n + 3) {
         margin-top: 0;
       }
 
-      &:not(:nth-child(3n+3)) {
+      &:not(:nth-child(3n + 3)) {
         margin-right: rem($gridPadding);
       }
     }
@@ -143,20 +136,19 @@ main {
 
 @include minw($pc) {
   .grid-4 {
-
-    &>div,
-    &>a {
+    & > div,
+    & > a {
       width: calc(25% - rem(calc($gridPadding/1.3333333333)));
 
-      &:nth-child(-n+4) {
+      &:nth-child(-n + 4) {
         margin-top: 0;
       }
 
-      &:nth-child(4n+4) {
+      &:nth-child(4n + 4) {
         margin-right: 0;
       }
 
-      &:not(:nth-child(4n+4)) {
+      &:not(:nth-child(4n + 4)) {
         margin-right: rem($gridPadding);
       }
     }
@@ -200,8 +192,12 @@ main {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: rgba(0,0,0, .4);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
   }
 
   &-top {
@@ -223,7 +219,7 @@ main {
   .flex-2 {
     display: flex;
     align-items: center;
-  
+
     & > div {
       flex: 1;
     }
