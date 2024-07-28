@@ -210,7 +210,7 @@
     left: 0;
   }
 }
-.container {
+.container-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
