@@ -731,8 +731,77 @@ form label {
 }
 
 .hero-main {
-  padding-top: 0;
+  position: relative;
+  padding-top: 358px;
   padding-bottom: 90px;
+}
+.hero-main .hero-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 252px;
+  height: 520px;
+  background-color: #2b3138;
+  z-index: 0;
+}
+.hero-main .hero-bg__yellow {
+  position: absolute;
+  top: 59px;
+  right: 16px;
+  width: 252px;
+  height: 445px;
+  background-color: #fdd76e;
+}
+.hero-main .hero-bg__img {
+  position: absolute;
+  top: 22px;
+  right: 32px;
+  width: 345px;
+  height: 466px;
+  background-image: url("../img/hero/bg-girle.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.hero-main .hero-brand {
+  margin-bottom: 64px;
+}
+.hero-main .hero-brand__logo {
+  margin-bottom: 4px;
+}
+.hero-main .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-main .hero-content p {
+  text-align: center;
+  font-weight: 500;
+}
+.hero-main .hero-content__title {
+  margin-bottom: 16px;
+  font-size: 25px;
+}
+.hero-main .hero-content__subtitle {
+  margin-bottom: 36px;
+  font-size: 16px;
+}
+.hero-main .hero-content__btn {
+  width: 100%;
+  max-width: 361px;
+  height: 59px;
+  margin: 0 auto;
+  font-size: 22px;
+  font-weight: 500;
+  border: transparent;
+  background-color: rgb(25, 28, 34);
+  color: rgb(249, 243, 243);
+}
+
+.container {
+  width: 100%;
 }
 
 .footer {

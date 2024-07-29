@@ -1,6 +1,97 @@
 @import "../core";
 
 .hero-main {
-  padding-top: 0;
+  position: relative;
+
+  padding-top: 358px;
   padding-bottom: 90px;
+
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 252px;
+    height: 520px;
+
+    background-color: #2b3138;
+    z-index: 0;
+
+    &__yellow {
+      position: absolute;
+      top: 59px;
+      right: 16px;
+
+      width: 252px;
+      height: 445px;
+
+      background-color: #fdd76e;
+    }
+
+    &__img {
+      position: absolute;
+      top: 22px;
+      right: 32px;
+
+      width: 345px;
+      height: 466px;
+
+      background-image: url("../img/hero/bg-girle.png");
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .hero-brand {
+    margin-bottom: 64px;
+
+    &__logo {
+      margin-bottom: 4px;
+    }
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & p {
+      text-align: center;
+      font-weight: 500;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+
+      font-size: 25px;
+    }
+
+    &__subtitle {
+      margin-bottom: 36px;
+
+      font-size: 16px;
+    }
+
+    &__btn {
+      width: 100%;
+      max-width: 361px;
+      height: 59px;
+      margin: 0 auto;
+
+      font-size: 22px;
+      font-weight: 500;
+
+      border: transparent;
+      background-color: rgba(25, 28, 34, 1);
+
+      color: rgba(249, 243, 243, 1);
+    }
+  }
+}
+
+.container {
+  width: 100%;
 }
