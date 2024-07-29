@@ -46,10 +46,10 @@ section {
 
 main {
   flex: 1;
-  margin-top: 6rem;
+  margin-top: 81px;
 
-  @include minw($sm-pc) {
-    margin-top: 0;
+  @include minw($lg-tablet) {
+    margin-top: 122px;
   }
 }
 
