@@ -1,10 +1,205 @@
 @import "../core";
 
 .footer {
-	background-color: $black;
-	padding: 6rem 0;
+  background-color: $black;
+  padding-bottom: 20px;
 
-	p {
-		color: #fff;
-	}
+  p {
+    color: #fff;
+  }
+
+  &__form {
+    margin-top: -107px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px 16px;
+
+    max-width: 692px;
+
+    text-align: center;
+    background-color: $accentColor;
+
+    .form__title {
+      margin-bottom: 16px;
+
+      font-size: 26px;
+      font-weight: 500;
+
+      color: #191c22;
+    }
+
+    .form__sub-title {
+      margin-bottom: 24px;
+
+      font-size: 18px;
+      color: #191c22;
+    }
+
+    .form__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+      max-width: 329px;
+      height: 59px;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      font-size: 22px;
+      font-weight: 500;
+
+      border: transparent;
+      background-color: #191c22;
+
+      color: #f9f3f3;
+    }
+
+    @include minw($lg-tablet) {
+      margin-top: -62px;
+      margin-bottom: 24px;
+      padding: 20px;
+
+      .form__title {
+        margin-bottom: 24px;
+
+        font-size: 32px;
+      }
+
+      .form__box {
+        display: flex;
+        align-items: center;
+      }
+
+      .form__sub-title {
+        margin-bottom: 0;
+        margin-right: 33px;
+
+        font-size: 20px;
+        text-align: left;
+      }
+
+      .form__btn {
+        max-width: 268px;
+        height: 61px;
+
+        font-size: 24px;
+      }
+    }
+
+    @include minw($lg) {
+      max-width: 944px;
+      margin-top: -93px;
+      margin-bottom: 36px;
+      padding: 30px 60px;
+
+      .form__title {
+        font-size: 36px;
+      }
+
+      .form__sub-title {
+        margin-right: 60px;
+      }
+
+      .form__btn {
+        max-width: 363px;
+      }
+    }
+  }
+
+  &__contact-social {
+    @include minw($lg-tablet) {
+      display: flex;
+    }
+  }
+
+  &__contact {
+    margin-bottom: 20px;
+
+    .contact__title {
+      margin-bottom: 20px;
+
+      font-size: 32px;
+      font-weight: 400;
+      color: #f9f3f3;
+    }
+
+    .contact__box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 12px;
+      }
+
+      & img {
+        width: 36px;
+        height: 36px;
+      }
+
+      & p {
+        font-size: 18px;
+        color: #f9f3f3;
+
+        &.mB {
+          margin-bottom: 12px;
+        }
+      }
+    }
+
+    @include minw($lg-tablet) {
+      margin-bottom: 0;
+
+      .contact__title {
+        font-size: 40px;
+      }
+
+      .contact__box {
+        gap: 10px;
+      }
+    }
+
+    @include minw($lg) {
+      .contact__title {
+        font-size: 60px;
+      }
+
+      .contact__box {
+        gap: 12px;
+
+        & p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  &__social-media {
+    width: 190px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    .social-media__title {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .social-media__box {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include minw($lg-tablet) {
+      margin-right: 0;
+      margin-top: auto;
+    }
+  }
+}
+
+.container-footer {
+  width: 100%;
 }

@@ -1,60 +1,193 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gulp template</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="Shortcut Icon"
+      type="image/x-icon"
+      href="img/general/favicon.svg"
+    />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gulp template</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="Shortcut Icon" type="image/x-icon" href="img/general/favicon.svg" />
+    <link rel="stylesheet" href="css/modules/example.css"><link rel="stylesheet" href="css/modules/banner.css"><link rel="stylesheet" href="css/modules/video.css"><link rel="stylesheet" href="css/modules/anchor.css"><link rel="stylesheet" href="css/modules/tabs.css"><link rel="stylesheet" href="css/modules/popup.css"><link rel="stylesheet" href="css/modules/slider.css">
 
-	<link rel="stylesheet" href="css/modules/example.css"><link rel="stylesheet" href="css/modules/banner.css"><link rel="stylesheet" href="css/modules/video.css"><link rel="stylesheet" href="css/modules/anchor.css"><link rel="stylesheet" href="css/modules/tabs.css"><link rel="stylesheet" href="css/modules/popup.css"><link rel="stylesheet" href="css/modules/slider.css">
+    <link rel="stylesheet" href="css/libs/swiper.css" />
+  </head>
 
-	<link rel="stylesheet" href="css/libs/swiper.css">
-</head>
+  <body>
+    <!-- Add autoHide class to automatically hide the header on scroll -->
+    <header class="header autoHide">
+      <div class="container container-header">
+        <div class="header__burger">
+          <span></span>
+          <span class="header__burger-center"></span>
+          <span></span>
+        </div>
 
-<body>
+        <a href="/" class="header__logo"
+          ><img src="img/icons/LOGO.svg" alt="logo"
+        /></a>
 
-<!-- Add autoHide class to automatically hide the header on scroll -->
-<header class="header autoHide">
-	<div class="container">
-		<a href="/" class="header__logo"><img src="img/general/logo.svg" alt="logo"></a>
+        <div class="header__menu">
+          <ul class="header__menu-list">
+            <li class="menu-item">
+              <a class="menu-item__submenu">
+                Про нас
+                <svg
+                  width="24"
+                  height="24"
+                  id="arrow-down"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.4448 8.48145L12.4817 15.4446L5.51848 8.48144"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <ul class="submenu">
+                <li><a href="#">Про студію</a></li>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="#">Новини</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item__submenu">
+                Вікові категорії
+                <svg
+                  width="24"
+                  height="24"
+                  id="arrow-down"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.4448 8.48145L12.4817 15.4446L5.51848 8.48144"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <ul class="submenu">
+                <li><a href="#">2-4 роки</a></li>
+                <li><a href="#">4-6 років</a></li>
+                <li><a href="#">6-9 років</a></li>
+                <li><a href="#">9-13 років</a></li>
+                <li><a href="#">14-16 років</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item__submenu">
+                Стилі
+                <svg
+                  width="24"
+                  height="24"
+                  id="arrow-down"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.4448 8.48145L12.4817 15.4446L5.51848 8.48144"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <ul class="submenu">
+                <li><a href="#">Хореографія</a></li>
+                <li><a href="#">Хіп - Хоп</a></li>
+                <li><a href="#">Контемпорарі</a></li>
+                <li><a href="#">Джаз Фанк</a></li>
+                <li><a href="#">Модерн Джаз</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="page.html">Розклад</a></li>
+            <li class="menu-item"><a href="#">Викладачі</a></li>
+            <li class="menu-item"><a href="#">Контакти</a></li>
+          </ul>
+        </div>
+        <a href="tel:+38 050 123 45 67" class="header__phone">
+          <div class="header__phone-s">
+            <img src="img/icons/icon-phone.svg" alt="logo" />
+          </div>
+          <div class="header__phone-m">
+            <img src="img/icons/icon-phone-white.svg" alt="logo" />+38 050 123
+            45 67
+          </div>
+        </a>
+      </div>
+    </header>
 
-		<div class="header__menu">
+    <!-- <main class="main"></main> -->
+  </body>
+</html>
 
-			<ul class="header__menu-list">
-				<li class="menu-item"><a href="page.html">page</a></li>
-				<li class="menu-item"><a href="#">Menu 2</a></li>
-				<li class="menu-item"><a href="#">Menu 3</a></li>
-			</ul>
-		</div>
-		
-		<div class="header__burger"></div>
-	</div>
-</header>
 
-<main class="main">
 
-<section class="banner" id="banner">
-	<div class="container flex-2">
-		<div class="banner__wrap">
-			<h1>Стартовая сборка для темы Wordpress</h1>
-		</div>
-
-		<div class="banner__img">
-			<img src="img/gulp-white-logo.svg" alt="">
-		</div>
-	</div>
-
-	<div class="banner__bg bg" style="--bg-image: url('../img/cover/bg.png');"><div></div></div>
-</section>
 
 </main>
 
 <footer class="footer">
-	<div class="container">
-		<p>Footer</p>
+	<div class="container container-footer">
+		<div class="footer__form">
+			<h2 class="form__title">Маєте питання?</h2>
+			<div class="form__box">
+				<p class="form__sub-title">Заповніть форму зворотнього зв’язку і ми Вам зателефонуємо</p>
+				<button class="form__btn">Написати нам</button>
+			</div>
+		</div>
+		<div class="footer__contact-social">
+			<div class="footer__contact">
+				<h3 class="contact__title">A6 Satellite</h3>
+				<div class="contact__box">
+					<img src="img/icons/icon-location.svg" alt="logo"/>
+					<div>
+						<p class="mB">Київ, вул. Святошинська, 16/1, 02000</p>
+						<p>Київ, вул. Героїв Космосу 4, 02000</p>
+					</div>
+				</div>
+				<div class="contact__box">
+					<img src="img/icons/icon-time.svg" alt="logo"/>
+					<div>
+						<p class="mB">ПН-ПТ: 14:00-19:00</p>
+						<p>сб-нд: 10:00-14:00</p>
+					</div>
+				</div>
+				<div class="contact__box">
+					<img src="img/icons/icon-phone-white.svg" alt="logo"/>
+					<p>+38 067 853 76 96</p>
+				</div>
+				<div class="contact__box">
+					<img src="img/icons/icon-mail.svg" alt="logo"/>
+					<p>a6_satellite@gmail.com</p>
+				</div>
+			</div>
+			<div class="footer__social-media">
+				<p class="social-media__title">Наша dance тусовка</p>
+				<div class="social-media__box">
+					<a href="#">
+						<img src="img/icons/icon-fb.svg" alt="logo"/>
+					</a>
+					<a href="#">
+						<img src="img/icons/icon-inst.svg" alt="logo"/>
+					</a>
+					<a href="#">
+						<img src="img/icons/icon-ytb.svg" alt="logo"/>
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </footer>
 
