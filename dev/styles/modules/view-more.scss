@@ -1,0 +1,152 @@
+.view-more {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 90px;
+
+  @include minw($lg-tablet) {
+    padding-top: 24px;
+    padding-bottom: 120px;
+  }
+
+  .view-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 361px;
+    height: 996px;
+
+    background-color: #fdd76e;
+
+    @include minw($lg-tablet) {
+      width: 743px;
+      height: 925px;
+    }
+  }
+
+  .view-content {
+    &__img {
+      width: 100%;
+      max-width: 361px;
+      height: 488px;
+
+      background-image: url("../img/view-more/view-children.jpg");
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+    }
+
+    &__info {
+      padding: 40px 20px;
+      background-color: rgba(43, 49, 56, 1);
+
+      p {
+        font-size: 18px;
+        font-weight: 300;
+
+        color: rgba(249, 243, 243, 1);
+      }
+    }
+
+    &__title {
+      margin-bottom: 16px;
+
+      font-size: 26px;
+      font-weight: 500;
+
+      color: rgba(249, 243, 243, 1);
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      margin-bottom: 16px;
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 263px;
+      height: 51px;
+      margin-left: auto;
+
+      text-decoration: none;
+
+      span {
+        font-size: 22px;
+        font-weight: 500;
+
+        color: #fdd76e;
+      }
+
+      img {
+        margin-left: 12px;
+      }
+    }
+
+    @include minw($lg-tablet) {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 810px;
+      margin-left: auto;
+
+      &__info {
+        width: 403px;
+
+        padding: 60px 30px;
+
+        p {
+          font-size: 22px;
+        }
+      }
+
+      &__img {
+        max-width: 407px;
+        width: 407px;
+        height: 925px;
+
+        background-image: url("../img/view-more/view-childrenM.jpg");
+      }
+
+      &__title {
+        margin-bottom: 24px;
+
+        font-size: 32px;
+      }
+
+      &__subtitle {
+        margin-bottom: 28px;
+      }
+
+      &__text {
+        margin-bottom: 24px;
+      }
+
+      &__btn {
+        width: 282px;
+        height: 53px;
+
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.container-view {
+  max-width: 393px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @include minw($lg-tablet) {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 0 0 24px;
+  }
+}

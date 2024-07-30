@@ -735,6 +735,18 @@ form label {
   padding-top: 358px;
   padding-bottom: 90px;
 }
+@media only screen and (min-width: 834px) {
+  .hero-main {
+    padding-top: 499px;
+    padding-bottom: 120px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-main {
+    padding-top: 48px;
+    padding-bottom: 140px;
+  }
+}
 .hero-main .hero-bg {
   position: absolute;
   top: 0;
@@ -765,11 +777,96 @@ form label {
   background-color: rgb(255, 255, 255);
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
+@media only screen and (min-width: 834px) {
+  .hero-main .hero-bg {
+    width: 494px;
+    height: 1041px;
+  }
+  .hero-main .hero-bg__yellow {
+    top: 64px;
+    right: 24px;
+    width: 517px;
+    height: 956px;
+  }
+  .hero-main .hero-bg__img {
+    top: 44px;
+    right: 44px;
+    width: 632px;
+    height: 956px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-main .hero-bg {
+    width: 708px;
+    height: 810px;
+  }
+  .hero-main .hero-bg__yellow {
+    top: 187px;
+    right: 58px;
+    width: 759px;
+    height: 565px;
+  }
+  .hero-main .hero-bg__img {
+    top: 48px;
+    right: 80px;
+    width: 845px;
+    height: 682px;
+    background-size: 870px;
+    background-image: url("../img/hero/bg-girleL.png");
+  }
+}
 .hero-main .hero-brand {
   margin-bottom: 64px;
 }
 .hero-main .hero-brand__logo {
+  width: 96px;
+  height: 77px;
   margin-bottom: 4px;
+  background-image: url("../img/hero/logo-brand.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-main .hero-brand__name {
+  width: 223px;
+  height: 49px;
+  background-image: url("../img/hero/name-brand.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 834px) {
+  .hero-main .hero-brand {
+    margin-bottom: 14px;
+  }
+  .hero-main .hero-brand__logo {
+    width: 197px;
+    height: 157px;
+    margin-bottom: 0;
+    background-image: url("../img/hero/logo-brandM.png");
+  }
+  .hero-main .hero-brand__name {
+    margin-top: -15px;
+    width: 558px;
+    height: 120px;
+    background-image: url("../img/hero/name-brandM.png");
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-main .hero-brand {
+    margin-bottom: 34px;
+  }
+  .hero-main .hero-brand__logo {
+    width: 281px;
+    height: 366px;
+    background-image: url("../img/hero/logo-brandL.png");
+  }
+  .hero-main .hero-brand__name {
+    margin-top: -80px;
+    width: 669px;
+    height: 146px;
+    background-image: url("../img/hero/name-brandL.png");
+  }
 }
 .hero-main .hero-content {
   display: flex;
@@ -799,9 +896,173 @@ form label {
   background-color: rgb(25, 28, 34);
   color: rgb(249, 243, 243);
 }
+@media only screen and (min-width: 834px) {
+  .hero-main .hero-content p {
+    text-align: start;
+  }
+  .hero-main .hero-content__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+  .hero-main .hero-content__subtitle {
+    margin-bottom: 40px;
+    font-size: 22px;
+  }
+  .hero-main .hero-content__btn {
+    max-width: 346px;
+    height: 61px;
+    margin: 0;
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-main .hero-content__title {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .hero-main .hero-content__subtitle {
+    margin-bottom: 60px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .hero-main .hero-content__btn {
+    max-width: 390px;
+  }
+}
 
 .container {
   width: 100%;
+}
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.view-more {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 90px;
+}
+@media only screen and (min-width: 834px) {
+  .view-more {
+    padding-top: 24px;
+    padding-bottom: 120px;
+  }
+}
+.view-more .view-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 361px;
+  height: 996px;
+  background-color: #fdd76e;
+}
+@media only screen and (min-width: 834px) {
+  .view-more .view-bg {
+    width: 743px;
+    height: 925px;
+  }
+}
+.view-more .view-content__img {
+  width: 100%;
+  max-width: 361px;
+  height: 488px;
+  background-image: url("../img/view-more/view-children.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.view-more .view-content__info {
+  padding: 40px 20px;
+  background-color: rgb(43, 49, 56);
+}
+.view-more .view-content__info p {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(249, 243, 243);
+}
+.view-more .view-content__title {
+  margin-bottom: 16px;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgb(249, 243, 243);
+}
+.view-more .view-content__subtitle {
+  margin-bottom: 20px;
+}
+.view-more .view-content__text {
+  margin-bottom: 16px;
+}
+.view-more .view-content__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 263px;
+  height: 51px;
+  margin-left: auto;
+  text-decoration: none;
+}
+.view-more .view-content__btn span {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fdd76e;
+}
+.view-more .view-content__btn img {
+  margin-left: 12px;
+}
+@media only screen and (min-width: 834px) {
+  .view-more .view-content {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 810px;
+    margin-left: auto;
+  }
+  .view-more .view-content__info {
+    width: 403px;
+    padding: 60px 30px;
+  }
+  .view-more .view-content__info p {
+    font-size: 22px;
+  }
+  .view-more .view-content__img {
+    max-width: 407px;
+    width: 407px;
+    height: 925px;
+    background-image: url("../img/view-more/view-childrenM.jpg");
+  }
+  .view-more .view-content__title {
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+  .view-more .view-content__subtitle {
+    margin-bottom: 28px;
+  }
+  .view-more .view-content__text {
+    margin-bottom: 24px;
+  }
+  .view-more .view-content__btn {
+    width: 282px;
+    height: 53px;
+  }
+  .view-more .view-content__btn span {
+    font-size: 24px;
+  }
+}
+
+.container-view {
+  max-width: 393px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+@media only screen and (min-width: 834px) {
+  .container-view {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 0 0 24px;
+  }
 }
 
 .footer {

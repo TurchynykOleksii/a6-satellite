@@ -1,0 +1,66 @@
+.view-more {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 90px;
+}
+.view-more .view-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 361px;
+  height: 996px;
+  background-color: #fdd76e;
+}
+.view-more .view-content__img {
+  width: 100%;
+  max-width: 361px;
+  height: 488px;
+  background-image: url("../img/view-more/view-children.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.view-more .view-content__info {
+  padding: 40px 20px;
+  background-color: rgb(43, 49, 56);
+}
+.view-more .view-content__info p {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(249, 243, 243);
+}
+.view-more .view-content__title {
+  margin-bottom: 16px;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgb(249, 243, 243);
+}
+.view-more .view-content__subtitle {
+  margin-bottom: 20px;
+}
+.view-more .view-content__text {
+  margin-bottom: 16px;
+}
+.view-more .view-content__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 263px;
+  height: 51px;
+  margin-left: auto;
+  text-decoration: none;
+}
+.view-more .view-content__btn span {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fdd76e;
+}
+.view-more .view-content__btn img {
+  margin-left: 12px;
+}
+
+.container-view {
+  max-width: 393px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
