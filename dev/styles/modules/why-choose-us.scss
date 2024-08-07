@@ -1,0 +1,137 @@
+@import "../core";
+
+.why {
+  .why__title {
+    margin-bottom: 40px;
+
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .swiper {
+    overflow: visible; /* Сделать слайды частично видимыми */
+    height: 373px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-slide {
+    padding: 0;
+    width: 249px; /* Динамическая ширина слайда */
+    flex-shrink: 0; /* Запретить уменьшение размера слайда */
+    display: inline-flex;
+    justify-content: center;
+    // align-items: center;
+
+    .slide-content {
+      display: flex;
+      flex-direction: column; /* Расположение элементов по вертикали */
+      align-items: center;
+
+      & div > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    & > .slide-content > div {
+      width: 249px;
+      height: 249px;
+      border-radius: 50%;
+      margin-bottom: 24px; /* Отступ между изображением и текстом */
+    }
+
+    & > .slide-content > p {
+      margin: 0;
+
+      width: 249px;
+      height: 58px;
+
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 29px;
+      text-align: center;
+    }
+  }
+
+  /* Стили для контейнера пагинации */
+  .swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Отступ снизу */
+  }
+
+  /* Стили для каждой точки */
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background: rgba(217, 217, 217, 1); /* Цвет точек */
+    opacity: 0.5; /* Прозрачность неактивных точек */
+    transition: opacity 0.3s;
+    margin: 0 5px; /* Расстояние между точками */
+
+    @include minw(1003px) {
+      display: none;
+    }
+  }
+
+  /* Стили для активной точки */
+  .swiper-pagination-bullet-active {
+    opacity: 1; /* Прозрачность активной точки */
+    background: rgba(253, 215, 110, 1); /* Цвет активной точки */
+  }
+
+  @include minw($lg-tablet) {
+    .why__title {
+      margin-bottom: 48px;
+
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
+
+  @include minw($lg) {
+    .why__title {
+      margin-bottom: 60px;
+
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    .swiper {
+      height: 390px;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    .swiper-slide {
+      width: 302px;
+
+      & > .slide-content > div {
+        width: 302px;
+        height: 302px;
+      }
+
+      & > .slide-content > p {
+        width: 302px;
+        height: 64px;
+
+        font-size: 26px;
+        line-height: 31px;
+      }
+    }
+  }
+}

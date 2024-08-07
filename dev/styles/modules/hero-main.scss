@@ -1,6 +1,260 @@
 @import "../core";
 
 .hero-main {
-  padding-top: 0;
+  position: relative;
+
+  padding-top: 358px;
   padding-bottom: 90px;
+
+  @include minw($lg-tablet) {
+    padding-top: 499px;
+    padding-bottom: 120px;
+  }
+
+  @include minw($lg) {
+    padding-top: 48px;
+    padding-bottom: 140px;
+  }
+
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 252px;
+    height: 520px;
+
+    background-color: #2b3138;
+    z-index: 0;
+
+    &__yellow {
+      position: absolute;
+      top: 59px;
+      right: 16px;
+
+      width: 252px;
+      height: 445px;
+
+      background-color: #fdd76e;
+    }
+
+    &__img {
+      position: absolute;
+      top: 22px;
+      right: 32px;
+
+      width: 345px;
+      height: 466px;
+
+      background-image: url("../img/hero/bg-girle.png");
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    @include minw($lg-tablet) {
+      width: 494px;
+      height: 1041px;
+
+      &__yellow {
+        top: 64px;
+        right: 24px;
+
+        width: 517px;
+        height: 956px;
+      }
+
+      &__img {
+        top: 44px;
+        right: 44px;
+
+        width: 632px;
+        height: 956px;
+      }
+    }
+
+    @include minw($lg) {
+      width: 708px;
+      height: 810px;
+
+      &__yellow {
+        top: 187px;
+        right: 58px;
+
+        width: 759px;
+        height: 565px;
+      }
+
+      &__img {
+        top: 48px;
+        right: 80px;
+
+        width: 845px;
+        height: 682px;
+
+        background-size: 870px;
+        background-image: url("../img/hero/bg-girleL.png");
+      }
+    }
+  }
+
+  .hero-brand {
+    margin-bottom: 64px;
+
+    &__logo {
+      width: 96px;
+      height: 77px;
+      margin-bottom: 4px;
+
+      background-image: url("../img/hero/logo-brand.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &__name {
+      width: 223px;
+      height: 49px;
+
+      background-image: url("../img/hero/name-brand.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @include minw($lg-tablet) {
+      margin-bottom: 14px;
+
+      &__logo {
+        width: 197px;
+        height: 157px;
+        margin-bottom: 0;
+
+        background-image: url("../img/hero/logo-brandM.png");
+      }
+
+      &__name {
+        margin-top: -15px;
+
+        width: 558px;
+        height: 120px;
+
+        background-image: url("../img/hero/name-brandM.png");
+      }
+    }
+
+    @include minw($lg) {
+      margin-bottom: 34px;
+
+      &__logo {
+        width: 281px;
+        height: 366px;
+
+        background-image: url("../img/hero/logo-brandL.png");
+      }
+
+      &__name {
+        margin-top: -80px;
+
+        width: 669px;
+        height: 146px;
+
+        background-image: url("../img/hero/name-brandL.png");
+      }
+    }
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & p {
+      text-align: center;
+      font-weight: 500;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+
+      font-size: 25px;
+    }
+
+    &__subtitle {
+      margin-bottom: 36px;
+
+      font-size: 16px;
+    }
+
+    &__btn {
+      width: 100%;
+      max-width: 361px;
+      height: 59px;
+      margin: 0 auto;
+
+      font-size: 22px;
+      font-weight: 500;
+
+      border: transparent;
+      background-color: rgba(25, 28, 34, 1);
+
+      color: rgba(249, 243, 243, 1);
+    }
+
+    @include minw($lg-tablet) {
+      & p {
+        text-align: start;
+      }
+
+      &__title {
+        margin-bottom: 20px;
+
+        font-size: 32px;
+      }
+
+      &__subtitle {
+        margin-bottom: 40px;
+
+        font-size: 22px;
+      }
+
+      &__btn {
+        max-width: 346px;
+        height: 61px;
+        margin: 0;
+
+        font-size: 24px;
+      }
+    }
+
+    @include minw($lg) {
+      &__title {
+        margin-bottom: 24px;
+
+        font-size: 36px;
+        line-height: 42px;
+      }
+
+      &__subtitle {
+        margin-bottom: 60px;
+
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      &__btn {
+        max-width: 390px;
+      }
+    }
+  }
+}
+
+.container {
+  width: 100%;
+
+  @include minw($lg) {
+    max-width: 1440px;
+  }
 }
