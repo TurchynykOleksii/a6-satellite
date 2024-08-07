@@ -1,0 +1,123 @@
+@charset "UTF-8";
+.styles {
+  position: relative;
+  /* Стили для контейнера пагинации */
+  /* Стили для каждой точки */
+  /* Стили для активной точки */
+}
+.styles::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(137, 141, 146);
+  z-index: -1;
+}
+.styles .styles__title {
+  margin-bottom: 40px;
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: 500;
+  text-align: center;
+}
+.styles .swiper2 {
+  overflow: visible; /* Сделать слайды частично видимыми */
+  height: 468px;
+}
+.styles .swiper-wrapper {
+  display: flex;
+}
+.styles .swiper-slide {
+  padding: 0;
+  width: 361px; /* Динамическая ширина слайда */
+  flex-shrink: 0; /* Запретить уменьшение размера слайда */
+  display: inline-flex;
+  justify-content: center;
+}
+.styles .swiper-slide .slide-content {
+  display: flex;
+  flex-direction: column; /* Расположение элементов по вертикали */
+  align-items: center;
+}
+.styles .swiper-slide .slide-content div > img {
+  width: 100%;
+  height: 100%;
+}
+.styles .swiper-slide > .slide-content > div {
+  width: 249px;
+  height: 249px;
+  border-radius: 50%;
+  margin-bottom: 24px; /* Отступ между изображением и текстом */
+}
+.styles .swiper-slide > .slide-content > p {
+  margin: 0;
+  width: 249px;
+  height: 58px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  text-align: center;
+}
+.styles .swiper-pagination2 {
+  position: absolute;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Отступ снизу */
+}
+.styles .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background: rgb(217, 217, 217); /* Цвет точек */
+  opacity: 0.5; /* Прозрачность неактивных точек */
+  transition: opacity 0.3s;
+  margin: 0 5px; /* Расстояние между точками */
+}
+@media only screen and (min-width: 1003px) {
+  .styles .swiper-pagination-bullet {
+    display: none;
+  }
+}
+.styles .swiper-pagination-bullet-active {
+  opacity: 1; /* Прозрачность активной точки */
+  background: rgb(253, 215, 110); /* Цвет активной точки */
+}
+@media only screen and (min-width: 834px) {
+  .styles .why__title {
+    margin-bottom: 48px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .styles .why__title {
+    margin-bottom: 60px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .styles .swiper {
+    height: 390px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .styles .swiper-slide {
+    width: 302px;
+  }
+  .styles .swiper-slide > .slide-content > div {
+    width: 302px;
+    height: 302px;
+  }
+  .styles .swiper-slide > .slide-content > p {
+    width: 302px;
+    height: 64px;
+    font-size: 26px;
+    line-height: 31px;
+  }
+}

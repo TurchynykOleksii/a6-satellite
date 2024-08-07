@@ -28,6 +28,35 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+const swiper2 = new Swiper(".swiper2", {
+  slidesPerView: 1,
+  centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 0,
+    },
+    834: {
+      spaceBetween: 20,
+    },
+    1103: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+  },
+});
+
 // $('.swiper-button-prev').remove();
 // $('.swiper-button-next').remove();
 
