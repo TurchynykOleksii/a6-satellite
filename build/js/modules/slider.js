@@ -41,18 +41,12 @@ const swiper2 = new Swiper(".swiper2", {
   },
   breakpoints: {
     320: {
-      spaceBetween: 0,
-    },
-    834: {
       spaceBetween: 20,
     },
-    1103: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    },
-    1440: {
-      slidesPerView: 4,
-      spaceBetween: 24,
+    834: {
+      centeredSlides: false,
+      spaceBetween: 92,
+      slidesPerView: "auto",
     },
   },
 });
