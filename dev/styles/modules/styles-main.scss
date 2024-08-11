@@ -1,0 +1,204 @@
+@import "../core";
+
+.styles {
+  // position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(137, 141, 146, 1);
+    z-index: -1;
+  }
+
+  .styles__title {
+    margin-bottom: 40px;
+
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .swiper2 {
+    overflow: visible; /* Сделать слайды частично видимыми */
+    height: 468px;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-slide {
+    padding: 0;
+    width: 361px; /* Динамическая ширина слайда */
+
+    flex-shrink: 0; /* Запретить уменьшение размера слайда */
+    display: inline-flex;
+    justify-content: center;
+    // align-items: center;
+
+    .slide-content {
+      position: relative;
+
+      display: flex;
+      flex-direction: column; /* Расположение элементов по вертикали */
+      align-items: center;
+
+      &__img {
+        width: 283px;
+        height: 396px;
+
+        & > img {
+          width: 100%;
+          height: 100%;
+        }
+
+        & > p {
+          position: absolute;
+          top: 28px;
+          margin-left: -5%;
+
+          font-size: 32px;
+          font-weight: 800;
+          line-height: 39px;
+          text-transform: uppercase;
+        }
+      }
+
+      &__yellow {
+        position: absolute;
+        top: -28px;
+        left: -28px;
+
+        width: 295px;
+        height: 440px;
+
+        background-color: rgba(253, 215, 110, 1);
+      }
+
+      &__black {
+        position: absolute;
+        top: -16px;
+        left: -12px;
+
+        width: 323px;
+        height: 456px;
+
+        background-color: rgba(25, 28, 34, 1);
+      }
+    }
+  }
+
+  /* Стили для контейнера пагинации */
+  .swiper-pagination2 {
+    position: absolute;
+    text-align: center;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Отступ снизу */
+  }
+
+  /* Стили для каждой точки */
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background: rgba(217, 217, 217, 1); /* Цвет точек */
+    opacity: 0.5; /* Прозрачность неактивных точек */
+    transition: opacity 0.3s;
+    margin: 0 5px; /* Расстояние между точками */
+
+    @include minw(1003px) {
+      display: none;
+    }
+  }
+
+  /* Стили для активной точки */
+  .swiper-pagination-bullet-active {
+    opacity: 1; /* Прозрачность активной точки */
+    background: rgba(253, 215, 110, 1); /* Цвет активной точки */
+  }
+
+  @include minw($lg-tablet) {
+    padding-left: 24px;
+    padding-bottom: 267px;
+
+    .swiper-slide {
+      width: 485px; /* Динамическая ширина слайда */
+
+      .slide-content {
+        &__img {
+          width: 405px;
+          height: 568px;
+
+          & > p {
+            top: 40px;
+            margin-left: -10%;
+
+            font-size: 45px;
+            line-height: 55px;
+          }
+        }
+
+        &__yellow {
+          top: -40px;
+          left: -40px;
+
+          width: 425px;
+          height: 628px;
+        }
+
+        &__black {
+          top: -20px;
+          left: -20px;
+
+          width: 465px;
+          height: 648px;
+        }
+      }
+    }
+
+    .swiper-pagination2 {
+      bottom: -200px; /* Отступ снизу */
+    }
+  }
+
+  // @include minw($lg) {
+  //   .why__title {
+  //     margin-bottom: 60px;
+
+  //     font-size: 36px;
+  //     line-height: 44px;
+  //   }
+
+  //   .swiper {
+  //     height: 390px;
+  //     padding-left: 80px;
+  //     padding-right: 80px;
+  //   }
+
+  //   .swiper-slide {
+  //     width: 302px;
+
+  //     & > .slide-content > div {
+  //       width: 302px;
+  //       height: 302px;
+  //     }
+
+  //     & > .slide-content > p {
+  //       width: 302px;
+  //       height: 64px;
+
+  //       font-size: 26px;
+  //       line-height: 31px;
+  //     }
+  //   }
+  // }
+}

@@ -1,25 +1,55 @@
-const swiper = new Swiper('.swiper', {
-	slidesPerView: "auto",
-	watchOverflow: true,
-	loop: true,
-	pagination: {
-		el: '.swiper-pagination',
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-	spaceBetween: 20,
-	autoHeight: true,
-	breakpoints: {
-		// when window width is >= 992px
-		992: {
-			slidesPerView: 4,
-			spaceBetween: 40
-		}
-  }
+const swiper = new Swiper(".swiper", {
+  slidesPerView: "auto",
+  centeredSlides: false,
+  spaceBetween: 20, // Отступ между слайдами
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 16,
+    },
+    834: {
+      spaceBetween: 20,
+    },
+    1103: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+  },
 });
 
+const swiper2 = new Swiper(".swiper2", {
+  slidesPerView: 1,
+  centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 20,
+    },
+    834: {
+      centeredSlides: false,
+      spaceBetween: 92,
+      slidesPerView: "auto",
+    },
+  },
+});
 
 // $('.swiper-button-prev').remove();
 // $('.swiper-button-next').remove();
