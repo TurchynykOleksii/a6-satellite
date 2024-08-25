@@ -161,7 +161,7 @@ $(document).ready(function () {
 const swiper = new Swiper('.styles__swiper', {
 	slidesPerView: 'auto',
 	centeredSlides: false,
-	spaceBetween: 20, 
+	spaceBetween: 20,
 	loop: true,
 	pagination: {
 		el: '.styles__swiper .swiper-pagination',
@@ -170,6 +170,12 @@ const swiper = new Swiper('.styles__swiper', {
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
+	},
+	breakpoints: {
+		768: {
+			slidesPerView: 1.4,
+            spaceBetween: 40,
+		},
 	},
 });
 
@@ -207,6 +213,12 @@ const swiper3 = new Swiper('.category__swiper', {
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
+	},
+	breakpoints: {
+		768: {
+			loop: true,
+			slidesPerView: 3,
+		},
 	},
 });
 
