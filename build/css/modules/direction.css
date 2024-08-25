@@ -1,0 +1,130 @@
+.direction__decr {
+  margin-bottom: 90px;
+  padding: 48px 30px;
+  background-color: #2b3138;
+}
+.direction__decr * {
+  color: white;
+}
+.direction__title {
+  position: absolute;
+  top: 40px;
+  left: 18px;
+  z-index: 2;
+  font-size: 50px;
+  font-weight: 900;
+  color: #fdd461;
+  text-transform: uppercase;
+}
+.direction__image {
+  position: relative;
+}
+.direction__image:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 30px;
+  background-color: #fff;
+}
+.direction__wrap {
+  position: relative;
+}
+.direction__wrap:before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -16px;
+  display: block;
+  width: 100%;
+  height: calc(100% - 32px);
+  background-color: #fdd76e;
+}
+.direction__descr-title {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.direction__descr-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+.direction__benefits {
+  margin-bottom: 197px;
+  background-color: #f5f5f5;
+}
+.direction__benefits-wrap {
+  padding: 60px 0;
+}
+.direction__benefits-info {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+.direction__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  counter-reset: item;
+}
+.direction__item {
+  position: relative;
+  padding-left: 60px;
+  counter-increment: item;
+}
+.direction__item:before {
+  content: counter(item);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 800;
+  font-size: 60px;
+  color: #fbcd4d;
+  line-height: 1;
+}
+.direction__item-title {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+.direction__item-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 140%;
+}
+.direction__test {
+  margin-bottom: 90px;
+}
+.direction__test-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 26px;
+  text-align: center;
+}
+.direction__test-info {
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+}
+.direction__test-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 361px;
+  width: 100%;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.15);
+  background: #000;
+}

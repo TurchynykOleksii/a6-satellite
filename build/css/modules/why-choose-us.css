@@ -1,9 +1,4 @@
 @charset "UTF-8";
-.why {
-  /* Стили для контейнера пагинации */
-  /* Стили для каждой точки */
-  /* Стили для активной точки */
-}
 .why .why__title {
   margin-bottom: 40px;
   font-size: 26px;
@@ -51,35 +46,6 @@
   line-height: 29px;
   text-align: center;
 }
-.why .swiper-pagination {
-  position: absolute;
-  text-align: center;
-  transition: 0.3s opacity;
-  transform: translate3d(0, 0, 0);
-  z-index: 10;
-  left: 0;
-  right: 0;
-  bottom: 0; /* Отступ снизу */
-}
-.why .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  border-radius: 50%;
-  background: rgb(217, 217, 217); /* Цвет точек */
-  opacity: 0.5; /* Прозрачность неактивных точек */
-  transition: opacity 0.3s;
-  margin: 0 5px; /* Расстояние между точками */
-}
-@media only screen and (min-width: 1003px) {
-  .why .swiper-pagination-bullet {
-    display: none;
-  }
-}
-.why .swiper-pagination-bullet-active {
-  opacity: 1; /* Прозрачность активной точки */
-  background: rgb(253, 215, 110); /* Цвет активной точки */
-}
 @media only screen and (min-width: 834px) {
   .why .why__title {
     margin-bottom: 48px;
@@ -111,4 +77,41 @@
     font-size: 26px;
     line-height: 31px;
   }
+}
+
+/* Стили для контейнера пагинации */
+.swiper-pagination {
+  margin-top: 20px;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Отступ снизу */
+}
+
+/* Стили для каждой точки */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background: rgb(217, 217, 217); /* Цвет точек */
+  opacity: 0.5; /* Прозрачность неактивных точек */
+  transition: opacity 0.3s;
+  margin: 0 5px; /* Расстояние между точками */
+}
+
+/* Стили для активной точки */
+.swiper-pagination-bullet-active {
+  opacity: 1; /* Прозрачность активной точки */
+  background: rgb(253, 215, 110); /* Цвет активной точки */
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
