@@ -3,7 +3,7 @@
   padding-top: 358px;
   padding-bottom: 90px;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .hero-main {
     padding-top: 499px;
     padding-bottom: 120px;
@@ -45,7 +45,7 @@
   background-color: rgb(255, 255, 255);
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .hero-main .hero-bg {
     width: 494px;
     height: 1041px;
@@ -103,7 +103,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .hero-main .hero-brand {
     margin-bottom: 14px;
   }
@@ -164,7 +164,7 @@
   background-color: rgb(25, 28, 34);
   color: rgb(249, 243, 243);
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .hero-main .hero-content p {
     text-align: start;
   }

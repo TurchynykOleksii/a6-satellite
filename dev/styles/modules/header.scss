@@ -10,7 +10,7 @@
   background-color: $black;
   z-index: 99;
 
-  @include minw($lg-tablet) {
+  @include minw($sm-pc) {
     padding: 24px 0;
   }
 
@@ -36,7 +36,7 @@
       margin-bottom: 8px;
     }
 
-    @include minw($lg-tablet) {
+    @include minw($sm-pc) {
       width: 64px;
       height: 28px;
 
@@ -84,7 +84,7 @@
     z-index: 100;
     transition: left 0.3s linear;
 
-    @include minw($lg-tablet) {
+    @include minw($sm-pc) {
       top: 122px;
     }
 
@@ -227,7 +227,7 @@
       }
     }
 
-    @include minw($lg-tablet) {
+    @include minw($sm-pc) {
       .header__phone-s {
         display: none;
       }

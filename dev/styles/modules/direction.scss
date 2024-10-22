@@ -58,9 +58,15 @@
 	&__benefits {
 		margin-bottom: 197px;
 		background-color: #f5f5f5;
+        
 	}
 	&__benefits-wrap {
 		padding: 60px 0;
+        @include minw(1280px) {
+            max-width: 954px;
+            width: 100%;
+            margin: 0 auto;
+        }
 	}
 	&__benefits-info {
 		margin-bottom: 24px;

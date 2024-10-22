@@ -41,7 +41,7 @@
   background-color: #191c22;
   color: #f9f3f3;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .footer__form {
     margin-top: -62px;
     margin-bottom: 24px;
@@ -84,7 +84,7 @@
     max-width: 363px;
   }
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .footer__contact-social {
     display: flex;
   }
@@ -117,7 +117,7 @@
 .footer__contact .contact__box p.mB {
   margin-bottom: 12px;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .footer__contact {
     margin-bottom: 0;
   }
@@ -152,7 +152,7 @@
   display: flex;
   justify-content: space-between;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .footer__social-media {
     margin-right: 0;
     margin-top: auto;

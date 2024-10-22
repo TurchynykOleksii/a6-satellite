@@ -59,6 +59,13 @@
 .direction__benefits-wrap {
   padding: 60px 0;
 }
+@media only screen and (min-width: 1280px) {
+  .direction__benefits-wrap {
+    max-width: 954px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .direction__benefits-info {
   margin-bottom: 24px;
   font-weight: 400;

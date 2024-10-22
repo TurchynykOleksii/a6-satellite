@@ -3,7 +3,7 @@
   padding-top: 16px;
   padding-bottom: 90px;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .view-more {
     padding-top: 24px;
     padding-bottom: 120px;
@@ -23,7 +23,7 @@
   height: 996px;
   background-color: #fdd76e;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .view-more .view-bg {
     width: 743px;
     height: 925px;
@@ -86,7 +86,7 @@
 .view-more .view-content__btn img {
   margin-left: 12px;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .view-more .view-content {
     display: flex;
     flex-direction: row-reverse;
@@ -153,7 +153,7 @@
   margin: 0 auto;
   padding: 0 16px;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .container-view {
     width: 100%;
     max-width: 1200px;

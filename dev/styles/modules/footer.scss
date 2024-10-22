@@ -57,7 +57,7 @@
       color: #f9f3f3;
     }
 
-    @include minw($lg-tablet) {
+    @include minw($sm-pc) {
       margin-top: -62px;
       margin-bottom: 24px;
       padding: 20px;
@@ -110,7 +110,7 @@
   }
 
   &__contact-social {
-    @include minw($lg-tablet) {
+    @include minw($sm-pc) {
       display: flex;
     }
   }
@@ -150,7 +150,7 @@
       }
     }
 
-    @include minw($lg-tablet) {
+    @include minw($sm-pc) {
       margin-bottom: 0;
 
       .contact__title {
@@ -193,7 +193,7 @@
       justify-content: space-between;
     }
 
-    @include minw($lg-tablet) {
+    @include minw($sm-pc) {
       margin-right: 0;
       margin-top: auto;
     }

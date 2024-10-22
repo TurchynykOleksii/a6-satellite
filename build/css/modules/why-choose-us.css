@@ -46,7 +46,7 @@
   line-height: 29px;
   text-align: center;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .why .why__title {
     margin-bottom: 48px;
     font-size: 32px;

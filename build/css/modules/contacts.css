@@ -59,6 +59,18 @@
   display: block;
   margin-bottom: 4px;
 }
+@media only screen and (min-width: 1280px) {
+  .contacts__map-schedule span:first-of-type {
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+  .contacts__map-schedule span:nth-last-of-type(2) {
+    font-size: 28px;
+  }
+  .contacts__map-schedule span:last-of-type {
+    font-size: 28px;
+  }
+}
 .contacts__mail-phone span,
 .contacts__mail-phone a {
   display: block;
@@ -68,6 +80,11 @@
 }
 .contacts__mail-phone a {
   margin-bottom: 12px;
+}
+@media only screen and (min-width: 1280px) {
+  .contacts__mail-phone a {
+    font-size: 28px;
+  }
 }
 .contacts__link-second {
   right: 0;

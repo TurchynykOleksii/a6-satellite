@@ -6,7 +6,7 @@
   padding-top: 358px;
   padding-bottom: 90px;
 
-  @include minw($lg-tablet) {
+  @include minw($sm-pc) {
     padding-top: 499px;
     padding-bottom: 120px;
   }
@@ -54,7 +54,7 @@
       box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.1);
     }
 
-    @include minw($lg-tablet) {
+    @include minw($sm-pc) {
       width: 494px;
       height: 1041px;
 
@@ -124,7 +124,7 @@
       background-repeat: no-repeat;
     }
 
-    @include minw($lg-tablet) {
+    @include minw($sm-pc) {
       margin-bottom: 14px;
 
       &__logo {
@@ -203,7 +203,7 @@
       color: rgba(249, 243, 243, 1);
     }
 
-    @include minw($lg-tablet) {
+    @include minw($sm-pc) {
       & p {
         text-align: start;
       }

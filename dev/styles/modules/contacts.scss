@@ -31,22 +31,22 @@
 		gap: 12px;
 		text-decoration: none;
 		background-color: #fdd76e;
-        &:before{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 		p {
 			font-weight: 500;
 			font-size: 20px;
 		}
 	}
-    &__map-info{
-        position: relative;
-    }
+	&__map-info {
+		position: relative;
+	}
 	&__map-text {
 		padding: 16px;
 		background-color: #898d92;
@@ -64,22 +64,36 @@
 	&__map-schedule span {
 		display: block;
 		margin-bottom: 4px;
+		@include minw(1280px) {
+			&:first-of-type {
+                margin-bottom: 8px;
+				font-size: 22px;
+			}
+            &:nth-last-of-type(2){
+				font-size: 28px;
+			}
+            &:last-of-type{
+				font-size: 28px;
+			}
+		}
 	}
 	&__mail-phone {
 		span,
 		a {
 			display: block;
 		}
-        span{
-            margin-bottom: 8px;
-        }
-        a{
-            margin-bottom: 12px;
-        }
+		span {
+			margin-bottom: 8px;
+		}
+		a {
+			margin-bottom: 12px;
+            @include minw(1280px) {
+                font-size: 28px;
+            }
+		}
 	}
-    &__link-second{
-        right: 0;
-        left: auto;
-
-    }
+	&__link-second {
+		right: 0;
+		left: auto;
+	}
 }

@@ -6,7 +6,7 @@
   background-color: #191c22;
   z-index: 99;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .header {
     padding: 24px 0;
   }
@@ -27,7 +27,7 @@
   margin-top: 8px;
   margin-bottom: 8px;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .header__burger {
     width: 64px;
     height: 28px;
@@ -67,7 +67,7 @@
   z-index: 100;
   transition: left 0.3s linear;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .header__menu {
     top: 122px;
   }
@@ -187,7 +187,7 @@
   height: 36px;
   margin-right: 12px;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-width: 992px) {
   .header__phone .header__phone-s {
     display: none;
   }

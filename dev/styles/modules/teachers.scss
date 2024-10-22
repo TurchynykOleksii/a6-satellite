@@ -1,10 +1,15 @@
 @import '../core';
 
 .teachers {
+    margin-top: 120px;
 	margin-bottom: 45px;
-	@include minw($lg-tablet) {
+	@include minw($tablet) {
+        margin-top: 145px;
 		margin-bottom: 60px;
 	}
+    @include minw(1280px) {
+        margin-top: 200px;
+    }
     @include minw($lg) {
         margin-bottom: 70px;
     }
@@ -21,6 +26,9 @@
 		font-size: 26px;
 		text-align: center;
 		color: #191c22;
+        @include minw($sm-pc) {
+            font-size: 36px;
+        }
 	}
 	&__img {
 		img {
@@ -36,9 +44,10 @@
 		align-items: center;
 		gap: 24px;
 		@include minw($lg-tablet) {
-			max-width: max-content;
+			max-width: fit-content;
 			flex-direction: row;
 			flex-wrap: wrap;
+            gap: 20px;
 		}
 	}
 	&__item {
@@ -46,20 +55,19 @@
 		display: flex;
 		flex-direction: column;
 		background-color: #f5f5f5;
-		@include minw($lg-tablet) {
+		@include minw($sm-pc) {
 			max-width: 383px;
 			background-color: #fff;
 		}
 	}
 	&__info {
+        position: static;
+		padding: 16px;
 		display: flex;
 		justify-content: space-between;
 		gap: 20px;
-	}
-	&__info {
-		position: static;
-		padding: 16px;
-		@include minw($lg-tablet) {
+        background-color: #F8F8F8;
+        @include minw($sm-pc) {
 			padding: 16px 16px 16px 0;
 		}
 	}
@@ -81,7 +89,7 @@
 		font-weight: 500;
 		font-size: 20px;
 		color: $black;
-		@include minw($lg-tablet) {
+		@include minw($sm-pc) {
 			margin-bottom: 12px;
 			font-size: 26px;
 		}
@@ -90,7 +98,7 @@
 		font-weight: 400;
 		font-size: 18px;
 		color: $black;
-		@include minw($lg-tablet) {
+		@include minw($sm-pc) {
 			font-size: 20px;
 			line-height: 1.4;
 		}
@@ -101,7 +109,7 @@
 	margin-bottom: 197px;
 	padding: 40px 0;
 	background-color: #f5f5f5;
-	@include minw($lg-tablet) {
+	@include minw($sm-pc) {
 		margin-top: 60px;
 		margin-bottom: 182px;
 		padding: 80px 0;
@@ -113,16 +121,19 @@
 		display: flex;
 		flex-direction: column;
 		gap: 24px;
-		@include minw($lg-tablet) {
+		@include minw($sm-pc) {
 			max-width: 518px;
 			width: 100%;
 			margin: 0 auto;
 		}
+        @include minw(1280px) {
+            max-width: 846px;
+        }
 		p {
 			font-weight: 300;
 			font-size: 18px;
 			line-height: 1.4;
-			@include minw($lg-tablet) {
+			@include minw($sm-pc) {
 				font-size: 22px;
 			}
 		}
