@@ -10,6 +10,7 @@
 		padding-bottom: 44px;
 	}
 	@include minw(1280px) {
+        
 		.container {
 			display: flex;
 			align-items: center;

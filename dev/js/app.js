@@ -158,3 +158,119 @@ $(document).ready(function () {
     false
   );
 });
+const swiper = new Swiper('.styles__swiper', {
+	slidesPerView: 'auto',
+	centeredSlides: false,
+	spaceBetween: 20,
+	loop: true,
+	pagination: {
+		el: '.styles__swiper .swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	breakpoints: {
+		768: {
+			slidesPerView: 1.4,
+            spaceBetween: 40,
+		},
+	},
+});
+
+const swiper2 = new Swiper('.reviews__swiper', {
+	slidesPerView: 'auto',
+	centeredSlides: true,
+	loop: true,
+	pagination: {
+		el: '.reviews__swiper .swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	breakpoints: {
+		320: {
+			spaceBetween: 20,
+		},
+		834: {
+			centeredSlides: false,
+			spaceBetween: 92,
+			slidesPerView: 'auto',
+		},
+	},
+});
+const swiper3 = new Swiper('.category__swiper', {
+	slidesPerView: 1.2,
+	centeredSlides: true,
+	spaceBetween: 20,
+	pagination: {
+		el: '.category__swiper .swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	breakpoints: {
+		768: {
+			loop: true,
+			slidesPerView: 3,
+		},
+	},
+});
+
+// $('.swiper-button-prev').remove();
+// $('.swiper-button-next').remove();
+
+const swiper4 = new Swiper('.team__swiper', {
+	slidesPerView: 1,
+	watchOverflow: true,
+	pagination: {
+		el: '.team__swiper .swiper-pagination',
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	spaceBetween: 20,
+	autoHeight: true,
+});
+
+const swiper5 = new Swiper('.video__swiper', {
+	slidesPerView: 1,
+	watchOverflow: true,
+	pagination: {
+		el: '.video__swiper .swiper-pagination',
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	spaceBetween: 20,
+	autoHeight: true,
+    breakpoints: {
+		768: {
+			loop: true,
+		},
+	},
+});
+
+$('.video-frame').on('click', function () {
+	let $this = $(this);
+    $(this).addClass('hide')
+	if (!$this.hasClass('video-play')) {
+		$this.addClass('video-play');
+
+		setTimeout(function () {
+			$this.find('img').fadeOut();
+		}, 500);
+
+		let src = $this.data('video-id');
+		let iframe = $('<iframe src="https://www.youtube.com/embed/' + src + '?rel=0&showinfo=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+
+		$this.find('.iframe').append(iframe);
+	}
+});

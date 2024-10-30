@@ -1,6 +1,18 @@
 @import '../core';
 
 .direction {
+	padding-top: 102px;
+	padding-bottom: 32px;
+	margin-bottom: 32px;
+	@include minw($mob) {
+		padding-top: 166px;
+		padding-bottom: 44px;
+	}
+	@include minw(1280px) {
+		padding-top: 200px;
+		padding-bottom: 220px;
+		margin-bottom: 0;
+	}
 	&__decr {
 		margin-bottom: 90px;
 		padding: 48px 30px;
@@ -18,9 +30,52 @@
 		font-weight: 900;
 		color: #fdd461;
 		text-transform: uppercase;
+		@include minw($mob) {
+			font-size: 92px;
+			left: 50%;
+			transform: translateX(-50%);
+			white-space: nowrap;
+		}
+		@include minw(1280px) {
+			left: auto;
+			right: -10%;
+		}
+	}
+	&__info-wrap {
+		@include minw($mob) {
+			max-width: 739px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@include minw(1280px) {
+			max-width: 100%;
+			display: flex;
+			justify-content: center;
+			flex-direction: row-reverse;
+		}
 	}
 	&__image {
 		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include minw($mob) {
+			max-height: 773px;
+			img {
+				max-height: 773px;
+				@include minw(1280px) {
+					max-height: 851px;
+				}
+			}
+		}
+		@include minw(1280px) {
+			max-height: 851px;
+		}
+		@include minw(1280px) {
+			max-width: 840px;
+			width: 100%;
+			flex-shrink: 0;
+		}
 		&:before {
 			content: '';
 			display: block;
@@ -29,10 +84,21 @@
 			position: absolute;
 			top: 30px;
 			background-color: #fff;
+			@include minw(1280px) {
+				top: 0;
+			}
 		}
 	}
 	&__wrap {
 		position: relative;
+		@include minw($mob) {
+			max-width: 786px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@include minw(1280px) {
+			max-width: 100%;
+		}
 		&:before {
 			content: '';
 			position: absolute;
@@ -42,6 +108,16 @@
 			width: 100%;
 			height: calc(100% - 32px);
 			background-color: #fdd76e;
+			@include minw($mob) {
+				top: -12px;
+				left: -27px;
+			}
+			@include minw(1280px) {
+				max-width: 726px;
+				max-height: 819px;
+				top: -40px;
+				left: -40px;
+			}
 		}
 	}
 	&__descr-title {
@@ -49,24 +125,29 @@
 		font-weight: 800;
 		font-size: 32px;
 		text-transform: uppercase;
+		@include minw($mob) {
+			font-size: 50px;
+		}
 	}
 	&__descr-text {
 		font-weight: 400;
 		font-size: 18px;
 		line-height: 140%;
+		color: #f9f3f3;
+		@include minw($mob) {
+			font-size: 22px;
+		}
 	}
 	&__benefits {
-		margin-bottom: 197px;
 		background-color: #f5f5f5;
-        
 	}
 	&__benefits-wrap {
 		padding: 60px 0;
-        @include minw(1280px) {
-            max-width: 954px;
-            width: 100%;
-            margin: 0 auto;
-        }
+		@include minw(1280px) {
+			max-width: 954px;
+			width: 100%;
+			margin: 0 auto;
+		}
 	}
 	&__benefits-info {
 		margin-bottom: 24px;
@@ -110,12 +191,31 @@
 	}
 	&__test {
 		margin-bottom: 90px;
+		@include minw($mob) {
+			margin-bottom: 122px;
+			max-width: 758px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 	&__test-title {
 		margin-bottom: 16px;
 		font-weight: 500;
 		font-size: 26px;
 		text-align: center;
+		@include minw($mob) {
+			margin-bottom: 48px;
+			font-size: 32px;
+		}
+	}
+	&__test-wrap {
+		@include minw($mob) {
+			margin-bottom: 122px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 60px;
+		}
 	}
 	&__test-info {
 		margin-bottom: 32px;
@@ -123,20 +223,114 @@
 		font-size: 20px;
 		line-height: 140%;
 		text-align: center;
+		@include minw($mob) {
+			text-align: left;
+			margin-bottom: 0;
+		}
 	}
 	&__test-btn {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 361px;
-        width: 100%;
-        padding: 16px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 361px;
+		width: 100%;
+		padding: 16px;
 		font-weight: 500;
 		font-size: 22px;
 		text-align: center;
-        color: white;
+		color: white;
 
 		box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.15);
 		background: #000;
+	}
+	.swiper-slide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.video-frame {
+		max-width: 393px;
+		width: 100%;
+		max-height: 212px;
+		height: 100%;
+		position: relative;
+		@include minw($mob) {
+			max-width: 786px;
+			max-height: 425px;
+		}
+		@include minw(1280px) {
+			max-width: 1062px;
+			max-height: 569px;
+			height: 100%;
+		}
+		iframe {
+			width: 100%;
+			min-height: 212px;
+			@include minw($mob) {
+				min-height: 425px;
+			}
+			@include minw(1280px) {
+				max-width: 1062px;
+				min-height: 569px;
+				max-height: 569px;
+			}
+		}
+		&:after {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			content: '';
+			display: block;
+			width: 60px;
+			height: 60px;
+			background-image: url('../../img/icons/play.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			transform: translate(-50%, -50%);
+			@include minw(1280px) {
+				width: 160px;
+				height: 160px;
+			}
+		}
+		&.hide {
+			&:after {
+				display: none;
+			}
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.swiper-navigation {
+		display: none;
+		@include minw(1280px) {
+			max-width: 1300px;
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			z-index: 5;
+		}
+	}
+	.swiper-pagination {
+		@include minw(1280px) {
+			display: none;
+		}
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+.video__swiper {
+	margin-bottom: 90px;
+	@include minw($mob) {
+		margin-bottom: 120px;
 	}
 }
