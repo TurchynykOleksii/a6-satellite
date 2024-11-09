@@ -1,0 +1,104 @@
+@import '../core';
+
+.news {
+	margin-bottom: 197px;
+	padding: 120px 0 40px;
+	@include minw($lg-tablet) {
+		margin-top: 60px;
+		margin-bottom: 182px;
+		padding: 80px 0;
+	}
+	@include minw($lg) {
+		margin-top: 70px;
+	}
+	.container {
+		max-width: 375px;
+		@include minw($lg-tablet) {
+			max-width: $lg-tablet;
+		}
+		@include minw($lg) {
+			max-width: 1280px;
+		}
+	}
+	&__list {
+		@include minw($lg) {
+			display: flex;
+			flex-direction: column;
+			gap: 120px;
+		}
+	}
+	&__inner {
+		h1 {
+			margin-bottom: 40px;
+			font-weight: 500;
+			font-size: 26px;
+			text-align: center;
+		}
+	}
+	&__item {
+		padding: 16px;
+		background-color: #f5f5f5;
+		@include minw($lg) {
+			display: flex;
+			flex-direction: row-reverse;
+			gap: 24px;
+		}
+	}
+	&__date {
+		display: block;
+		margin-bottom: 16px;
+		margin-left: auto;
+		text-align: right;
+        @include minw($lg) {
+			font-size: 24px;
+		}
+	}
+	&__title {
+		margin-bottom: 16px;
+		font-weight: 500;
+		font-size: 22px;
+	}
+	&__text {
+		margin-bottom: 26px;
+	}
+	&__text > * {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 140%;
+		@include minw($lg) {
+			font-size: 22px;
+		}
+	}
+	&__item-list {
+		margin-left: 15px;
+        @include minw($lg) {
+			margin-top: 10px;
+		}
+	}
+	&__item-list li {
+		list-style: disc;
+		padding-left: 5px;
+        @include minw($lg) {
+			font-size: 22px;
+		}
+		&::marker {
+			font-size: 1rem;
+		}
+	}
+	&__item-img {
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			@include minw($lg-tablet) {
+				min-width: 726px;
+				max-width: 727px;
+				min-height: 559px;
+				max-height: 560px;
+				object-fit: cover;
+			}
+		}
+	}
+}

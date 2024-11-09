@@ -1,6 +1,71 @@
 @import '../core';
 
 .contacts {
+	&__contact-title{
+        margin-top: 60px;
+        margin-bottom: 60px;
+		font-weight: 500;
+		font-size: 36px;
+		text-align: center;
+        @include maxw(1280px) {
+            display: none;
+        }
+	}
+	&-location {
+		margin-top: 0;
+		padding-top: 150px;
+		background-color: #fff;
+		@include minw($tablet) {
+			&:before {
+				display: none;
+			}
+		}
+		@include minw(1280px) {
+			margin-bottom: 230px;
+		}
+		h5 {
+			color: black;
+			margin-bottom: 44px;
+			@include minw($tablet) {
+				text-align: left;
+				margin-bottom: 48px;
+			}
+		}
+		.contacts__map-first {
+			flex-direction: row;
+			@include minw($tablet) {
+				margin-bottom: 120px;
+                &:before {
+					content: '';
+					width: 150%;
+					height: 100%;
+					background-color: #898d92;
+					position: absolute;
+					right: -55%;
+				}
+			}
+		}
+		.contacts__map-second {
+			flex-direction: row-reverse;
+            @include minw($tablet) {
+                &:before {
+					content: '';
+					width: 150%;
+					height: 100%;
+					background-color: #898d92;
+					position: absolute;
+					left: -55%;
+				}
+            }
+			@include minw(1280px) {
+				flex-direction: row;
+				&:before {
+					right: -55%;
+					left: auto;
+				}
+			}
+		}
+	}
 	&__map-first {
 		margin-bottom: 90px;
 	}
@@ -66,13 +131,13 @@
 		margin-bottom: 4px;
 		@include minw(1280px) {
 			&:first-of-type {
-                margin-bottom: 8px;
+				margin-bottom: 8px;
 				font-size: 22px;
 			}
-            &:nth-last-of-type(2){
+			&:nth-last-of-type(2) {
 				font-size: 28px;
 			}
-            &:last-of-type{
+			&:last-of-type {
 				font-size: 28px;
 			}
 		}
@@ -87,9 +152,9 @@
 		}
 		a {
 			margin-bottom: 12px;
-            @include minw(1280px) {
-                font-size: 28px;
-            }
+			@include minw(1280px) {
+				font-size: 28px;
+			}
 		}
 	}
 	&__link-second {

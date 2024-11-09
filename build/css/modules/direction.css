@@ -285,67 +285,6 @@
   justify-content: center;
   align-items: center;
 }
-.direction .video-frame {
-  max-width: 393px;
-  width: 100%;
-  max-height: 212px;
-  height: 100%;
-  position: relative;
-}
-@media only screen and (min-width: 576px) {
-  .direction .video-frame {
-    max-width: 786px;
-    max-height: 425px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .direction .video-frame {
-    max-width: 1062px;
-    max-height: 569px;
-    height: 100%;
-  }
-}
-.direction .video-frame iframe {
-  width: 100%;
-  min-height: 212px;
-}
-@media only screen and (min-width: 576px) {
-  .direction .video-frame iframe {
-    min-height: 425px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .direction .video-frame iframe {
-    max-width: 1062px;
-    min-height: 569px;
-    max-height: 569px;
-  }
-}
-.direction .video-frame:after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-image: url("../../img/icons/play.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translate(-50%, -50%);
-}
-@media only screen and (min-width: 1280px) {
-  .direction .video-frame:after {
-    width: 160px;
-    height: 160px;
-  }
-}
-.direction .video-frame.hide:after {
-  display: none;
-}
-.direction .video-frame:hover {
-  cursor: pointer;
-}
 .direction .swiper-navigation {
   display: none;
 }
@@ -380,4 +319,66 @@
   .video__swiper {
     margin-bottom: 120px;
   }
+}
+
+.video-frame {
+  max-width: 393px;
+  width: 100%;
+  max-height: 212px;
+  height: 100%;
+  position: relative;
+}
+@media only screen and (min-width: 576px) {
+  .video-frame {
+    max-width: 786px;
+    max-height: 425px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .video-frame {
+    max-width: 1062px;
+    max-height: 569px;
+    height: 100%;
+  }
+}
+.video-frame iframe {
+  width: 100%;
+  min-height: 212px;
+}
+@media only screen and (min-width: 576px) {
+  .video-frame iframe {
+    min-height: 425px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .video-frame iframe {
+    max-width: 1062px;
+    min-height: 569px;
+    max-height: 569px;
+  }
+}
+.video-frame:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/icons/play.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (min-width: 1280px) {
+  .video-frame:after {
+    width: 160px;
+    height: 160px;
+  }
+}
+.video-frame.hide:after {
+  display: none;
+}
+.video-frame:hover {
+  cursor: pointer;
 }

@@ -14,7 +14,6 @@
 		margin-bottom: 0;
 	}
 	&__decr {
-		margin-bottom: 90px;
 		padding: 48px 30px;
 		background-color: #2b3138;
 		* {
@@ -42,6 +41,7 @@
 		}
 	}
 	&__info-wrap {
+		margin-bottom: 90px;
 		@include minw($mob) {
 			max-width: 739px;
 			margin-left: auto;
@@ -58,18 +58,19 @@
 		position: relative;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: stretch;
 		@include minw($mob) {
-			max-height: 773px;
+			// max-height: 773px;
 			img {
-				max-height: 773px;
+				// max-height: 773px;
+				height: 100%;
 				@include minw(1280px) {
-					max-height: 851px;
+					// max-height: 851px;
 				}
 			}
 		}
 		@include minw(1280px) {
-			max-height: 851px;
+			// max-height: 851px;
 		}
 		@include minw(1280px) {
 			max-width: 840px;
@@ -83,7 +84,7 @@
 			height: 100%;
 			position: absolute;
 			top: 30px;
-			background-color: #fff;
+			background-color: #f5f5f5;
 			@include minw(1280px) {
 				top: 0;
 			}
@@ -248,59 +249,7 @@
 		justify-content: center;
 		align-items: center;
 	}
-	.video-frame {
-		max-width: 393px;
-		width: 100%;
-		max-height: 212px;
-		height: 100%;
-		position: relative;
-		@include minw($mob) {
-			max-width: 786px;
-			max-height: 425px;
-		}
-		@include minw(1280px) {
-			max-width: 1062px;
-			max-height: 569px;
-			height: 100%;
-		}
-		iframe {
-			width: 100%;
-			min-height: 212px;
-			@include minw($mob) {
-				min-height: 425px;
-			}
-			@include minw(1280px) {
-				max-width: 1062px;
-				min-height: 569px;
-				max-height: 569px;
-			}
-		}
-		&:after {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			content: '';
-			display: block;
-			width: 60px;
-			height: 60px;
-			background-image: url('../../img/icons/play.svg');
-			background-repeat: no-repeat;
-			background-size: cover;
-			transform: translate(-50%, -50%);
-			@include minw(1280px) {
-				width: 160px;
-				height: 160px;
-			}
-		}
-		&.hide {
-			&:after {
-				display: none;
-			}
-		}
-		&:hover {
-			cursor: pointer;
-		}
-	}
+
 	.swiper-navigation {
 		display: none;
 		@include minw(1280px) {
@@ -332,5 +281,58 @@
 	margin-bottom: 90px;
 	@include minw($mob) {
 		margin-bottom: 120px;
+	}
+}
+.video-frame {
+	max-width: 393px;
+	width: 100%;
+	max-height: 212px;
+	height: 100%;
+	position: relative;
+	@include minw($mob) {
+		max-width: 786px;
+		max-height: 425px;
+	}
+	@include minw(1280px) {
+		max-width: 1062px;
+		max-height: 569px;
+		height: 100%;
+	}
+	iframe {
+		width: 100%;
+		min-height: 212px;
+		@include minw($mob) {
+			min-height: 425px;
+		}
+		@include minw(1280px) {
+			max-width: 1062px;
+			min-height: 569px;
+			max-height: 569px;
+		}
+	}
+	&:after {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		content: '';
+		display: block;
+		width: 60px;
+		height: 60px;
+		background-image: url('../img/icons/play.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		transform: translate(-50%, -50%);
+		@include minw(1280px) {
+			width: 160px;
+			height: 160px;
+		}
+	}
+	&.hide {
+		&:after {
+			display: none;
+		}
+	}
+	&:hover {
+		cursor: pointer;
 	}
 }

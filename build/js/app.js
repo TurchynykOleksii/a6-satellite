@@ -1,8 +1,4 @@
 // JS fragment import example
-import * as functions from "./modules/functions.js";
-functions.isWebp();
-/* Добавление loaded для HTML после полной загрузки страницы */
-functions.addLoadedClass();
 
 // import Bound from './libs/bounds.js'
 
@@ -89,13 +85,13 @@ $(document).ready(function () {
   $(".menu-item__submenu").on("click", function (event) {
     event.preventDefault();
 
-    const submenu = $(this).siblings(".submenu");
+    const submenu = $(this).siblings(".sub-menu");
 
     if (submenu.hasClass("submenu--open")) {
       submenu.removeClass("submenu--open");
       $(this).removeClass("open"); // Удаляем класс .open при повторном клике
     } else {
-      $(".submenu").removeClass("submenu--open");
+      $(".sub-menu").removeClass("submenu--open");
       $(".menu-item__submenu").removeClass("open"); // Удаляем класс .open со всех элементов
 
       submenu.addClass("submenu--open");
@@ -274,3 +270,10 @@ $('.video-frame').on('click', function () {
 		$this.find('.iframe').append(iframe);
 	}
 });
+
+$('.add_arrow>a').addClass('menu-item__submenu');
+$('.menu-item__submenu').append(`<svg width="24" height="24" id="arrow-down" viewBox="0 0 24 24" fill="none"
+xmlns="http://www.w3.org/2000/svg">
+<path d="M19.4448 8.48145L12.4817 15.4446L5.51848 8.48144" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round" />
+</svg>`);

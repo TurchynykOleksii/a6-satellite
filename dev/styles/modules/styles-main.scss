@@ -10,7 +10,6 @@
 		padding-bottom: 44px;
 	}
 	@include minw(1280px) {
-        
 		.container {
 			display: flex;
 			align-items: center;
@@ -36,8 +35,6 @@
 		width: 100%;
 		height: 100%;
 		background-color: #2b3138;
-		@include minw(1280px) {
-		}
 	}
 	&__content {
 		position: absolute;
@@ -72,7 +69,6 @@
 		@include minw($tablet) {
 			font-size: 100px;
 		}
-        
 	}
 	&__image {
 		margin: 0 auto;
@@ -149,9 +145,9 @@
 		@include minw($tablet) {
 			margin-bottom: 20px;
 		}
-        @include minw(1280px) {
-            font-size: 35px;
-        }
+		@include minw(1280px) {
+			font-size: 35px;
+		}
 	}
 	&__subtitle {
 		margin-bottom: 36px;
@@ -187,8 +183,14 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
+		max-width: 403px;
+		margin: 0 auto;
 		@include minw($tablet) {
+			max-width: 810px;
 			flex-direction: row-reverse;
+		}
+		@include minw(1280px) {
+			max-width: 100%;
 		}
 		&:before {
 			position: absolute;
@@ -255,7 +257,6 @@
 		@include minw($tablet) {
 			font-size: 32px;
 		}
-        
 	}
 	&-text {
 		display: flex;
@@ -301,9 +302,9 @@
 		font-weight: 500;
 		font-size: 26px;
 		text-align: center;
-        @include minw(1280px) {
-            font-size: 35px;
-        }
+		@include minw(1280px) {
+			font-size: 35px;
+		}
 	}
 	&__img {
 		margin-bottom: 24px;
@@ -325,6 +326,52 @@
 	padding-bottom: 45px;
 	@include minw(1280px) {
 		padding-top: 96px;
+	}
+	&__prices {
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		align-items: flex-end;
+		p {
+			margin-bottom: 20px;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 140%;
+			color: #f9f3f3;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			font-weight: 500;
+			font-size: 24px;
+		}
+		@include minw(1280px) {
+			position: relative;
+			margin-top: -400px;
+			margin-bottom: 200px;
+			padding: 80px 0;
+			background-color: #f5f5f7;
+			&:before {
+				position: absolute;
+				display: block;
+				content: '';
+				height: 100%;
+				width: 100%;
+				top: 0;
+				right: -100%;
+				background-color: #f5f5f7;
+			}
+			p {
+				color: #191c22;
+			}
+		}
+		@include maxw($lg-tablet) {
+			display: none;
+		}
 	}
 	&:before {
 		position: absolute;
@@ -369,6 +416,16 @@
 			margin-top: 100px;
 		}
 	}
+	.slide-content {
+		max-width: 283px;
+		margin: 0 auto;
+		@include minw($tablet) {
+			max-width: 425px;
+		}
+		@include minw(1280px) {
+			max-width: 463px;
+		}
+	}
 	&__slide-content {
 		position: relative;
 		z-index: 3;
@@ -378,7 +435,7 @@
 			width: 100%;
 			position: absolute;
 			top: -28px;
-			left: 24px;
+			right: 24px;
 			content: '';
 			display: block;
 			width: 100%;
@@ -389,14 +446,14 @@
 				max-width: 425px;
 				min-height: 628px;
 				top: -36px;
-				right: 65px;
+				right: 35px;
 				left: auto;
 			}
 			@include minw(1280px) {
 				max-width: 463px;
 				min-height: 668px;
 				top: -46px;
-				right: 111px;
+				right: 47px;
 			}
 		}
 		&:after {
@@ -405,7 +462,7 @@
 			width: 100%;
 			position: absolute;
 			top: -16px;
-			right: 28px;
+			left: 28px;
 			content: '';
 			display: block;
 			width: 100%;
@@ -415,7 +472,7 @@
 			@include minw($tablet) {
 				max-width: 455px;
 				min-height: 648px;
-				left: 50px;
+				left: 30px;
 			}
 			@include minw(1280px) {
 				max-width: 506px;
@@ -434,10 +491,11 @@
 		text-transform: uppercase;
 		@include minw($tablet) {
 			font-size: 45px;
+			left: -60px;
 		}
 		@include minw(1280px) {
 			font-size: 50px;
-			left: -42px;
+			left: -77px;
 		}
 	}
 	&__img {
@@ -454,6 +512,7 @@
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+				min-height: 567px;
 			}
 		}
 		@include minw(1280px) {
@@ -468,7 +527,7 @@
 			display: block;
 			width: 28px;
 			height: 28px;
-			background-image: url('../../img/icons/icon-arrow-small.svg');
+			background-image: url('../../../img/icons/icon-arrow-small.svg');
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -518,9 +577,9 @@
 		font-weight: 500;
 		font-size: 26px;
 		text-align: center;
-        @include minw(1280px) {
-            font-size: 35px;
-        }
+		@include minw(1280px) {
+			font-size: 35px;
+		}
 	}
 	.container {
 		@include minw(786px) {
@@ -533,6 +592,15 @@
 		width: 100%;
 		img {
 			width: 100%;
+			height: 100%;
+			max-width: 515px;
+			max-height: 613px;
+			object-fit: cover;
+			object-position: top;
+			@include minw(1280px) {
+				max-width: 613px;
+				max-height: 730px;
+			}
 		}
 	}
 	&__content-pc-wrap {
@@ -567,7 +635,7 @@
 			display: block;
 			width: 60px;
 			height: 60px;
-			background-image: url('../../img/icons/icon-arrow-big.svg');
+			background-image: url('../../../img/icons/icon-arrow-big.svg');
 			background-repeat: no-repeat;
 			background-position: center;
 			transform: translateY(-50%);
@@ -616,9 +684,9 @@
 		font-weight: 500;
 		font-size: 26px;
 		text-align: center;
-        @include minw(1280px) {
-            font-size: 35px;
-        }
+		@include minw(1280px) {
+			font-size: 35px;
+		}
 	}
 	&__list {
 		width: 100%;
@@ -750,7 +818,8 @@
 	}
 }
 
-.main-location {
+.main-location,
+.contacts-location {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	padding-top: 40px;
@@ -768,9 +837,9 @@
 			width: 100%;
 			height: 100%;
 			background-color: #2b3138;
-            @include minw(1280px) {
-                left: -65%;
-            }
+			@include minw(1280px) {
+				left: -65%;
+			}
 		}
 	}
 
@@ -780,10 +849,10 @@
 		font-size: 26px;
 		text-align: center;
 		color: #f9f3f3;
-        @include minw(1280px) {
-            font-size: 35px;
-            color: #191C22;
-        }
+		@include minw(1280px) {
+			font-size: 35px;
+			color: #191c22;
+		}
 	}
 	.contacts__map-second {
 		margin-bottom: 0;
@@ -805,6 +874,7 @@
 			display: flex;
 			flex-direction: row-reverse;
 			background-color: #898d92;
+
 			@include minw(1280px) {
 				flex-direction: row;
 				background-color: transparent;
@@ -877,7 +947,12 @@
 		}
 	}
 }
-
+.teacher__video{
+    .video-frame{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .reviews {
 	padding-top: 45px;
 	margin-bottom: 197px;
@@ -886,9 +961,9 @@
 		font-weight: 500;
 		font-size: 26px;
 		text-align: center;
-        @include minw(1280px) {
-            font-size: 35px;
-        }
+		@include minw(1280px) {
+			font-size: 35px;
+		}
 	}
 	&__swiper {
 		overflow: hidden;

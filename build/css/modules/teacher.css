@@ -1,0 +1,230 @@
+.teacher {
+  margin-bottom: 197px;
+  padding: 40px 0;
+}
+@media only screen and (min-width: 834px) {
+  .teacher {
+    margin-top: 60px;
+    margin-bottom: 182px;
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .teacher {
+    margin-top: 70px;
+  }
+}
+.teacher .container {
+  max-width: 375px;
+}
+@media only screen and (min-width: 834px) {
+  .teacher .container {
+    max-width: 834px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .teacher .container {
+    max-width: 1280px;
+  }
+}
+.teacher .description {
+  padding: 40px 0;
+  margin-top: 0;
+  margin-bottom: 90px;
+}
+@media only screen and (min-width: 834px) {
+  .teacher .description {
+    display: none;
+  }
+}
+
+.profile {
+  margin-top: 145px;
+  margin-bottom: 122px;
+}
+@media only screen and (min-width: 834px) {
+  .profile {
+    margin-top: 47px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .profile {
+    margin-top: 170px;
+    margin-bottom: 216px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .profile__inner:before {
+    width: 200%;
+    height: 110%;
+    position: absolute;
+    top: -5%;
+    left: -2%;
+    content: "";
+    display: block;
+    background-color: #fdd76e;
+    z-index: -1;
+  }
+}
+.profile__text {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media only screen and (max-width: 834px) {
+  .profile__text {
+    display: none;
+  }
+}
+.profile__text p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+.profile__info {
+  padding: 62px 16px;
+  background-color: #fff;
+  max-width: 189px;
+}
+@media only screen and (min-width: 834px) {
+  .profile__info {
+    max-width: 425px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .profile__info {
+    padding: 60px 30px;
+    max-width: 519px;
+  }
+}
+.profile__info h1 {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 22px;
+}
+@media only screen and (min-width: 1440px) {
+  .profile__info h1 {
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
+}
+.profile__info:before {
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  top: -5%;
+  left: -30px;
+  content: "";
+  display: block;
+  background-color: #fdd76e;
+  z-index: -1;
+}
+@media only screen and (min-width: 834px) {
+  .profile__info:before {
+    height: 106%;
+    top: -3%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .profile__info:before {
+    display: none;
+  }
+}
+@media only screen and (min-width: 834px) {
+  .profile .dance__xp,
+.profile .dance__teach,
+.profile .dance__style {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
+.profile .dance__xp p,
+.profile .dance__teach p,
+.profile .dance__style p {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+}
+.profile .dance__xp span,
+.profile .dance__teach span,
+.profile .dance__style span {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: right;
+}
+.profile .dance__social {
+  margin-left: auto;
+  position: relative;
+  max-width: 121px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-bottom: 1px solid black;
+}
+.profile .dance__social a {
+  position: static;
+  display: inline-block;
+  text-decoration: none;
+}
+.profile .dance__social a:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.profile__out-img {
+  position: absolute;
+  top: -32px;
+  right: 0;
+  max-width: 220px;
+  max-height: 495px;
+  z-index: -1;
+}
+@media only screen and (min-width: 834px) {
+  .profile__out-img {
+    margin-top: -47px;
+    max-width: 424px;
+    width: 100%;
+    min-height: 1033px;
+    max-height: 1033px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .profile__out-img {
+    top: -56px;
+    max-width: 845px;
+    max-height: 976px;
+    min-height: 976px;
+  }
+}
+.profile__out-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media only screen and (min-width: 834px) {
+  .profile__out-img img {
+    max-width: 424px;
+    width: 100%;
+    min-height: 1033px;
+    max-height: 1033px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .profile__out-img img {
+    max-width: 845px;
+    min-height: 976px;
+    max-height: 976px;
+    object-position: top;
+  }
+}
